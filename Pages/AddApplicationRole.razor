@@ -5,7 +5,7 @@
 <RadzenRow>
     <RadzenColumn SizeMD="12">
         <RadzenTemplateForm TItem="ClientCare.Models.ApplicationRole" Data="@role" Visible="@(role != null)" Submit="@FormSubmit">
-            <RadzenAlert Title="Can ikke oprette rolle" Shade="Shade.Lighter" Variant="Variant.Flat" Size="AlertSize.Small" AlertStyle="AlertStyle.Danger" Visible="@errorVisible">@error</RadzenAlert>
+            <RadzenAlert Title="Kan ikke oprette rolle" Shade="Shade.Lighter" Variant="Variant.Flat" Size="AlertSize.Small" AlertStyle="AlertStyle.Danger" Visible="@errorVisible">@error</RadzenAlert>
 
             <RadzenStack style="margin-bottom: 1rem;">
                 <RadzenFormField Text="Navn" Variant="Variant.Filled">
