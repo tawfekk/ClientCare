@@ -19,7 +19,7 @@
             </RadzenStack>
         </RadzenColumn>
     </RadzenRow>
-           <!--
+          
     <RadzenTextBox Placeholder="Søg ..." style="display: block; width: 100%" @oninput="@Search" />
     <RadzenRow>
       <RadzenColumn SizeMD=12>
@@ -28,7 +28,7 @@
             <Columns>
                 <RadzenDataGridColumn TItem="ClientCare.Models.CRM.Netværk" Property="Name" Title="Name" Pickable="true" Sortable="true" Filterable="false">
                 </RadzenDataGridColumn>
-                <RadzenDataGridColumn TItem="ClientCare.Models.CRM.Netværk" Property="Medlem.Company" Title="Medlemmer">
+                <RadzenDataGridColumn TItem="ClientCare.Models.CRM.Netværk" Property="Medlem.Name" Title="Medlemmer">
                 </RadzenDataGridColumn>
                 <RadzenDataGridColumn TItem="ClientCare.Models.CRM.Netværk" Filterable="false" Sortable="false" Width="70px" TextAlign="TextAlign.Center">
                     <Template Context="netværk">
@@ -42,5 +42,5 @@
         </RadzenDataGrid>
     </RadzenColumn>
   </RadzenRow>
-  -->
+ 
 </RadzenStack>

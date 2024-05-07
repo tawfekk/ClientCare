@@ -23,7 +23,7 @@
                     <RadzenLabel Text="Medlemmer" Component="Medlem" style="width: 100%" />
                 </RadzenColumn>
                 <RadzenColumn SizeMD="9">
-                    <RadzenDropDownDataGrid Data="@medlemmerForMedlemId" TextProperty="Email" ValueProperty="Id" AllowClear=true
+                    <RadzenDropDownDataGrid Data="@medlemmerForMedlemId" TextProperty="Name" ValueProperty="Id" AllowClear=true
                          Placeholder="Vælg medlemmer" style="display: block; width: 100%" @bind-Value="@netværk.MedlemId" Name="MedlemId"
                            />
                 </RadzenColumn>

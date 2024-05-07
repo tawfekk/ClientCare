@@ -14,10 +14,6 @@ namespace ClientCare.Models.CRM
 
         [Required]
         [ConcurrencyCheck]
-        public decimal Amount { get; set; }
-
-        [Required]
-        [ConcurrencyCheck]
         public string Name { get; set; }
 
         [Required]
@@ -31,10 +27,6 @@ namespace ClientCare.Models.CRM
         [Required]
         [ConcurrencyCheck]
         public int StatusId { get; set; }
-
-        [Required]
-        [ConcurrencyCheck]
-        public DateTime CloseDate { get; set; }
 
         public Medlem Medlem { get; set; }
 

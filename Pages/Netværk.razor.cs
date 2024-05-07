@@ -48,16 +48,16 @@ namespace ClientCare.Pages
 
             await grid0.GoToPage(0);
 
-            netværk = await CRMService.GetNetværk(new Query { Filter = $@"i => i.Name.Contains(@0) || i.UserId.Contains(@0)", FilterParameters = new object[] { search }, Expand = "Medlem" });
+            netværk = await CRMService.GetNetværk(new Query { Filter = $@"i => i.Name.Contains(@0)", FilterParameters = new object[] { search }, Expand = "Medlem" });
         }
         protected override async Task OnInitializedAsync()
         {
-            netværk = await CRMService.GetNetværk(new Query { Filter = $@"i => i.Name.Contains(@0) || i.UserId.Contains(@0)", FilterParameters = new object[] { search }, Expand = "Medlem" });
+            netværk = await CRMService.GetNetværk(new Query { Filter = $@"i => i.Name.Contains(@0)", FilterParameters = new object[] { search }, Expand = "Medlem" });
         }
 
         protected async Task AddButtonClick(MouseEventArgs args)
         {
-            await DialogService.OpenAsync<AddNetværk>("Add Netværk", null);
+            await DialogService.OpenAsync<AddNetværk>("Tilføj Netværk", null);
             await grid0.Reload();
         }
 

@@ -28,9 +28,6 @@ namespace ClientCare.Data
               .HasForeignKey(i => i.MedlemId)
               .HasPrincipalKey(i => i.Id);
 
-            builder.Entity<ClientCare.Models.CRM.Netværk>()
-              .Property(p => p.CloseDate)
-              .HasColumnType("datetime");
         }
 
         public DbSet<ClientCare.Models.CRM.Medlem> Medlemmer { get; set; }
