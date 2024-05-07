@@ -64,7 +64,7 @@ namespace ClientCare.Pages
 
         protected async Task EditRow(ClientCare.Models.CRM.Medlem args)
         {
-            await DialogService.OpenAsync<EditMedlem>("Rediger Medlem", new Dictionary<string, object> { {"Id", args.Id} });
+            await DialogService.OpenAsync<EditMedlem>("Rediger medlem", new Dictionary<string, object> { {"Id", args.Id} });
         }
 
         protected async Task GridDeleteButtonClick(MouseEventArgs args, ClientCare.Models.CRM.Medlem medlem)

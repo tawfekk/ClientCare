@@ -10,7 +10,7 @@
         </RadzenColumn>
         <RadzenColumn Size="12" SizeMD="6">
             <RadzenStack Orientation="Orientation.Horizontal" AlignItems="AlignItems.Center" JustifyContent="JustifyContent.End" Gap="0.5rem">
-                <RadzenButton Icon="add_circle_outline" Text="Add" Click="@AddClick" Variant="Variant.Flat" />
+                <RadzenButton Icon="add_circle_outline" Text="Tilføj" Click="@AddClick" onmouseover="this.style.backgroundColor='#7D55C7'; this.style.borderRadius='12px 0 12px 0'" onmouseout="this.style.backgroundColor='#38025C'; this.style.borderRadius='12px'" Variant="Variant.Flat" />
             </RadzenStack>
         </RadzenColumn>
     </RadzenRow>
@@ -18,16 +18,16 @@
         <RadzenColumn SizeMD="12">
             <RadzenAlert Size="AlertSize.Large" Shade="Shade.Light" AlertStyle="AlertStyle.Danger" Variant="Variant.Flat" Title="Cannot delete user" Visible="@errorVisible">@error</RadzenAlert>
             <RadzenDataGrid @ref="grid0" AllowFiltering="true" AllowPaging="true" ShowPagingSummary="true" PageSizeOptions=@(new int[]{5, 10, 20, 30}) AllowSorting="true" Data="@users"
-                TItem="ClientCare.Models.ApplicationUser" RowSelect="@RowSelect">
+                TItem="ClientCare.Models.ApplicationUser" RowSelect="@RowSelect" ClearFilterText="Ryd" AndOperatorText="Og" ApplyFilterText="Anvend" StartsWithText="Starter med" NotEqualsText="Ikke lig med" OrOperatorText="Eller" LessThanText="Mindre end" LessThanOrEqualsText="Mindre end eller lig med" IsNotNullText="Er ikke null" IsNullText="Er null" IsNotEmptyText="Er ikke tom" IsEmptyText="Er tom" GreaterThanText="Større end" GreaterThanOrEqualsText="Større end eller lig med" ColumnsText="Kolonner" ContainsText="Indeholder" ColumnsShowingText="Kolonner viser" EmptyText="Intet at vise her" EndsWithText="Ender med" EnumFilterSelectText="Vælg..." EnumNullFilterText="Ingen værdi" EqualsText="Lig med" Responsive="false" PageSizeText="Poster pr. side" SelectVisibleColumnsArialLabel="Vælg viste kolonner" RemoveGroupArialLabel="Fjern gruppe" PrevPageTitle="Forrige side" PrevPageAriaLabel="Gå til forrige side" PagingSummaryFormat="Side {0} ud af {1} ({2} poster)" PageTitleFormat="Side {0}" PageAriaLabelFormat="Gå til side {0}." NextPageTitle="Næste side" NextPageAriaLabel="Gå til næste side" LastPageTitle="Sidste side" LastPageAriaLabel="Gå til sidste side" FirstPageTitle="Første side" FirstPageAriaLabel="Gå til første side">
                 <Columns>
-                    <RadzenDataGridColumn TItem="ClientCare.Models.ApplicationUser" Property="Picture" Title="Photo" Filterable="false" Groupable="false" Reorderable="false">
+                    <RadzenDataGridColumn TItem="ClientCare.Models.ApplicationUser" Property="Picture" Title="Profilbillede" Filterable="false" Groupable="false" Reorderable="false">
                         <Template Context="user">
                             <RadzenImage Path="@user.Picture" Style="width: 30px; height: 30px"></RadzenImage>
                         </Template>                        
                     </RadzenDataGridColumn>
-                    <RadzenDataGridColumn TItem="ClientCare.Models.ApplicationUser" Property="UserName" Title="User Name" Filterable="false" />
-                    <RadzenDataGridColumn TItem="ClientCare.Models.ApplicationUser" Property="FirstName" Title="First Name"></RadzenDataGridColumn>
-                    <RadzenDataGridColumn TItem="ClientCare.Models.ApplicationUser" Property="LastName" Title="Last Name"></RadzenDataGridColumn>
+                    <RadzenDataGridColumn TItem="ClientCare.Models.ApplicationUser" Property="UserName" Title="Brugernavn" Filterable="false" />
+                    <RadzenDataGridColumn TItem="ClientCare.Models.ApplicationUser" Property="FirstName" Title="Fornavn"></RadzenDataGridColumn>
+                    <RadzenDataGridColumn TItem="ClientCare.Models.ApplicationUser" Property="LastName" Title="Efternavn"></RadzenDataGridColumn>
                     <RadzenDataGridColumn TItem="ClientCare.Models.ApplicationUser" Property="Email" Title="Email" />
                     <RadzenDataGridColumn TItem="ClientCare.Models.ApplicationUser" Filterable="false" Sortable="false" TextAlign="TextAlign.Center" Width="70px">
                         <Template Context="user">

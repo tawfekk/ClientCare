@@ -70,7 +70,7 @@ namespace ClientCare.Pages
         {
             try
             {
-                if (await DialogService.Confirm("Are you sure you want to delete this record?") == true)
+                if (await DialogService.Confirm("Er du sikker på at du vil slette denne post?") == true)
                 {
                     var deleteResult = await CRMService.DeleteNetværk(netværk.Id);
 

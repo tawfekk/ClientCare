@@ -3,10 +3,10 @@
 @attribute [Authorize]
 @inject Microsoft.Extensions.Localization.IStringLocalizer<EditBranche> L
 
-<PageTitle>Edit Branche</PageTitle>
+<PageTitle>Rediger branche</PageTitle>
 <RadzenRow>
     <RadzenColumn SizeMD="9">
-    <RadzenLabel style="font-weight: bold" Text="Item no longer available." Visible="@(!canEdit)" />
+    <RadzenLabel style="font-weight: bold" Text="Post ikke længere tilgængelig." Visible="@(!canEdit)" />
     </RadzenColumn>
     <RadzenColumn SizeMD="3">
     <RadzenButton ButtonStyle="ButtonStyle.Secondary" style="margin-bottom: 20px" Text="Close" Visible="@(!canEdit)" Click="@CancelButtonClick" />
@@ -14,10 +14,10 @@
 </RadzenRow>
 <RadzenRow>
     <RadzenColumn SizeMD="9">
-    <RadzenLabel style="font-weight: bold" Text="Another user has made conflicting changes to one or more of the fields you have modified. Please reload." Visible="@hasChanges" />
+    <RadzenLabel style="font-weight: bold" Text="En anden bruger netop redigeret denne post - genindlæs venligst siden" Visible="@hasChanges" />
     </RadzenColumn>
     <RadzenColumn SizeMD="3">
-    <RadzenButton ButtonStyle="ButtonStyle.Secondary" Icon="autorenew" style="margin-bottom: 20px" Text="Reload" Visible="@hasChanges" Click="@ReloadButtonClick" />
+    <RadzenButton ButtonStyle="ButtonStyle.Secondary" Icon="autorenew" style="margin-bottom: 20px" Text="Genindlæs" Visible="@hasChanges" Click="@ReloadButtonClick" />
     </RadzenColumn>
 </RadzenRow>
 

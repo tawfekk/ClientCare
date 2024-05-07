@@ -5,10 +5,10 @@
 <RadzenRow>
     <RadzenColumn SizeMD="12">
         <RadzenTemplateForm TItem="ClientCare.Models.ApplicationRole" Data="@role" Visible="@(role != null)" Submit="@FormSubmit">
-            <RadzenAlert Title="Cannot create role" Shade="Shade.Lighter" Variant="Variant.Flat" Size="AlertSize.Small" AlertStyle="AlertStyle.Danger" Visible="@errorVisible">@error</RadzenAlert>
+            <RadzenAlert Title="Can ikke oprette rolle" Shade="Shade.Lighter" Variant="Variant.Flat" Size="AlertSize.Small" AlertStyle="AlertStyle.Danger" Visible="@errorVisible">@error</RadzenAlert>
 
             <RadzenStack style="margin-bottom: 1rem;">
-                <RadzenFormField Text="Name" Variant="Variant.Filled">
+                <RadzenFormField Text="Navn" Variant="Variant.Filled">
                     <ChildContent>
                         <RadzenTextBox style="width: 100%" @bind-Value="@(role.Name)" Name="Navn" />
                     </ChildContent>

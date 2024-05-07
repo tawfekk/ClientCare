@@ -19,7 +19,7 @@
                 <RadzenStack AlignItems="AlignItems.Center" Orientation="Orientation.Horizontal" JustifyContent="JustifyContent.End">
                     <RadzenProfileMenu Visible="@Security.IsAuthenticated()" Click="@ProfileMenuClick">
                         <ChildContent>
-                            <RadzenProfileMenuItem Path="profile" Icon="settings" Text="Profil" />
+                            <RadzenProfileMenuItem Path="profile" Icon="settings" Text="Min profil" />
                             <RadzenProfileMenuItem Path="application-users" Icon="person" Text="Brugere" Visible="@Security.IsInRole("Drift")" />
                             <RadzenProfileMenuItem Path="application-roles" Icon="security" Text="Roller" Visible="@Security.IsInRole("Drift")" />
                             <RadzenProfileMenuItem Text="Log ud" Value="Logout" Icon="power_settings_new" />
@@ -49,7 +49,7 @@
         <RadzenPanelMenu>
             <RadzenPanelMenuItem Text="Dashboard" Path="" Icon="home" />
             <RadzenPanelMenuItem Text="Medlemmer" Path="medlemmer" Icon="workspaces" IconColor="" />
-            <RadzenPanelMenuItem Text="Netværk" Path="netværk" Icon="diversity_3" />
+            <RadzenPanelMenuItem Text="Netværk" Path="netværk" Icon="diversity_3" Disabled="true" />
             <RadzenPanelMenuItem Text="Indstillinger" Icon="settings" Visible="@Security.IsInRole("Drift")" IconColor="">
                             <RadzenPanelMenuItem Text="Branchefællesskaber" Path="brancher" Icon="diversity_2" />
                             <RadzenPanelMenuItem Text="Relationsansvarlige" Path="relations-ansvarlige" Icon="supervisor_account" />

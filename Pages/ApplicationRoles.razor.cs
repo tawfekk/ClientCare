@@ -45,7 +45,7 @@ namespace ClientCare.Pages
 
         protected async Task AddClick()
         {
-            await DialogService.OpenAsync<AddApplicationRole>("Add Application Role");
+            await DialogService.OpenAsync<AddApplicationRole>("Tilføj rolle");
 
             roles = await Security.GetRoles();
         }
@@ -54,7 +54,7 @@ namespace ClientCare.Pages
         {
             try
             {
-                if (await DialogService.Confirm("Are you sure you want to delete this role?") == true)
+                if (await DialogService.Confirm("Er du sikker på at du vil slette denne role?") == true)
                 {
                     await Security.DeleteRole($"{role.Id}");
 

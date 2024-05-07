@@ -10,26 +10,26 @@
             <RadzenStack style="margin-bottom: 1rem;">
                 <RadzenFormField Text="" Variant="Radzen.Variant.Filled">
                     <ChildContent>
-                        <RadzenFileInput Style="width: 100%;" @bind-Value="@(user.Picture)" Name="Photo" ChooseText="Choose Photo"></RadzenFileInput>
+                        <RadzenFileInput Style="width: 100%;" @bind-Value="@(user.Picture)" Name="Profilbillede" ChooseText="Vælg billede"></RadzenFileInput>
                     </ChildContent>
                     <Helper>
-                        <RadzenRequiredValidator Component="Photo" Text="Photo is required" />
+                        <RadzenRequiredValidator Component="Photo" Text="Billede er påkrævet" />
                     </Helper>
                 </RadzenFormField>
-                <RadzenFormField Text="First Name" Variant="Variant.Filled">
+                <RadzenFormField Text="Fornavn" Variant="Variant.Filled">
                     <ChildContent>
                         <RadzenTextBox style="width: 100%" @bind-Value="@user.FirstName" Name="FirstName" />
                     </ChildContent>
                     <Helper>
-                        <RadzenRequiredValidator Component="FirstName" Text="First Name is required" />
+                        <RadzenRequiredValidator Component="FirstName" Text="First Navn er påkrævet" />
                     </Helper>
                 </RadzenFormField>
-                <RadzenFormField Text="Last Name" Variant="Variant.Filled">
+                <RadzenFormField Text="Efternavn" Variant="Variant.Filled">
                     <ChildContent>
                         <RadzenTextBox style="width: 100%" @bind-Value="@user.LastName" Name="LastName" />
                     </ChildContent>
                     <Helper>
-                        <RadzenRequiredValidator Component="LastName" Text="Last Name is required" />
+                        <RadzenRequiredValidator Component="LastName" Text="Efternavn er påkrævet" />
                     </Helper>
                 </RadzenFormField>
 
@@ -38,30 +38,30 @@
                         <RadzenTextBox style="width: 100%" @bind-Value="@(user.Email)" Name="Email" />
                     </ChildContent>
                     <Helper>
-                        <RadzenRequiredValidator Component="Email" Text="Email is required" />
+                        <RadzenRequiredValidator Component="Email" Text="Email er påkrævet" />
                     </Helper>
                 </RadzenFormField>
 
-                <RadzenFormField Text="Roles" Variant="Variant.Filled">
+                <RadzenFormField Text="Roller" Variant="Variant.Filled">
                     <ChildContent>
                         <RadzenDropDown Data="@roles" Multiple="true" style="width: 100%" TextProperty="Name" @bind-Value="@(userRoles)" ValueProperty="Id" Name="Roles" />
                     </ChildContent>
                 </RadzenFormField>
-                <RadzenFormField Text="Password" Variant="Variant.Filled">
+                <RadzenFormField Text="Adgangskode" Variant="Variant.Filled">
                     <ChildContent>
                         <RadzenPassword @bind-Value="@(user.Password)" style="display: block; width: 100%" Name="Password" />
                     </ChildContent>
                     <Helper>
-                        <RadzenRequiredValidator Component="Password" Text="Password is required" />
+                        <RadzenRequiredValidator Component="Password" Text="Adgangskode er påkrævet" />
                     </Helper>
                 </RadzenFormField>
-                <RadzenFormField Text="Confirm Password" Variant="Variant.Filled">
+                <RadzenFormField Text="Bekræft adgangskode" Variant="Variant.Filled">
                     <ChildContent>
                         <RadzenPassword style="display: block; width: 100%" @bind-Value="@(user.ConfirmPassword)" Name="ConfirmPassword" />
                     </ChildContent>
                     <Helper>
-                        <RadzenRequiredValidator Component="ConfirmPassword" Text="ConfirmPassword is required" />
-                        <RadzenCompareValidator Text="Passwords must match" Component="ConfirmPassword" Value="@user.Password" />
+                        <RadzenRequiredValidator Component="ConfirmPassword" Text="Du skal bekræfte din adgangskode" />
+                        <RadzenCompareValidator Text="Adgangskoder skal være ens" Component="ConfirmPassword" Value="@user.Password" />
                     </Helper>
                 </RadzenFormField>
             </RadzenStack>

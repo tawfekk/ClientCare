@@ -45,14 +45,14 @@ namespace ClientCare.Pages
 
         protected async Task AddClick()
         {
-            await DialogService.OpenAsync<AddApplicationUser>("Add Application User");
+            await DialogService.OpenAsync<AddApplicationUser>("Tilføj bruger");
 
             users = await Security.GetUsers();
         }
 
         protected async Task RowSelect(ClientCare.Models.ApplicationUser user)
         {
-            await DialogService.OpenAsync<EditApplicationUser>("Edit Application User", new Dictionary<string, object>{ {"Id", user.Id} });
+            await DialogService.OpenAsync<EditApplicationUser>("Rediger bruger", new Dictionary<string, object>{ {"Id", user.Id} });
 
             users = await Security.GetUsers();
         }
@@ -61,7 +61,7 @@ namespace ClientCare.Pages
         {
             try
             {
-                if (await DialogService.Confirm("Are you sure you want to delete this user?") == true)
+                if (await DialogService.Confirm("Er du sikker på at du vil slette denne user?") == true)
                 {
                     await Security.DeleteUser($"{user.Id}");
 

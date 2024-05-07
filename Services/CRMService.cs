@@ -182,7 +182,7 @@ namespace ClientCare
 
             if (itemToUpdate == null)
             {
-               throw new Exception("Item no longer available");
+               throw new Exception("Post ikke længere tilgængelig");
             }
                 
             var entryToUpdate = Context.Entry(itemToUpdate);
@@ -208,7 +208,7 @@ namespace ClientCare
 
             if (itemToDelete == null)
             {
-               throw new Exception("Item no longer available");
+               throw new Exception("Post ikke længere tilgængelig");
             }
 
             OnMedlemDeleted(itemToDelete);
@@ -346,7 +346,7 @@ namespace ClientCare
 
             if (itemToUpdate == null)
             {
-               throw new Exception("Item no longer available");
+               throw new Exception("Post ikke længere tilgængelig");
             }
                 
             var entryToUpdate = Context.Entry(itemToUpdate);
@@ -371,7 +371,7 @@ namespace ClientCare
 
             if (itemToDelete == null)
             {
-               throw new Exception("Item no longer available");
+               throw new Exception("Post ikke længere tilgængelig");
             }
 
             OnNetværkDeleted(itemToDelete);
@@ -509,7 +509,7 @@ namespace ClientCare
 
             if (itemToUpdate == null)
             {
-               throw new Exception("Item no longer available");
+               throw new Exception("Post ikke længere tilgængelig");
             }
                 
             var entryToUpdate = Context.Entry(itemToUpdate);
@@ -534,7 +534,7 @@ namespace ClientCare
 
             if (itemToDelete == null)
             {
-               throw new Exception("Item no longer available");
+               throw new Exception("Post ikke længere tilgængelig");
             }
 
             OnBrancheDeleted(itemToDelete);
@@ -671,7 +671,7 @@ namespace ClientCare
 
             if (itemToUpdate == null)
             {
-               throw new Exception("Item no longer available");
+               throw new Exception("Post ikke længere tilgængelig");
             }
                 
             var entryToUpdate = Context.Entry(itemToUpdate);
@@ -696,7 +696,7 @@ namespace ClientCare
 
             if (itemToDelete == null)
             {
-               throw new Exception("Item no longer available");
+               throw new Exception("Post ikke længere tilgængelig");
             }
 
             OnRelationsAnsvarligDeleted(itemToDelete);

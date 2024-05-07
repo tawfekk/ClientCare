@@ -44,7 +44,6 @@ namespace ClientCare.Pages
         public CRMService CRMService { get; set;}
 
         Stats monthlyStats;
-        public IEnumerable<RevenueByCompany> revenueByCompany { get; set; }
         public IEnumerable<RevenueByMonth> revenueByMonth { get; set; }
         public IEnumerable<RevenueByMedlem> revenueByMedlem { get; set; }
 
@@ -56,10 +55,8 @@ namespace ClientCare.Pages
         protected override async Task OnInitializedAsync()
         {
             monthlyStats = MonthlyStats();
-            revenueByCompany = RevenueByCompany();
             revenueByMonth = RevenueByMonth();
             revenueByMedlem = RevenueByMedlem();
-            netværk = await CRMService.GetNetværk();
         }
 
 
@@ -72,24 +69,12 @@ namespace ClientCare.Pages
                         {
                             Month = group.Key,
                             Revenue = group.Sum(medlemmer => medlemmer.Kontigent),
-                            Netværk = group.Count(),
+                            Medlemmer = group.Count(),
                         })
                         .OrderBy(deals => deals.Month)
                         .LastOrDefault();
         }
 
-        public IEnumerable<RevenueByCompany> RevenueByCompany()
-        {
-            return Context.Netværk
-                                    .Include(netværk => netværk.Medlem)
-                                    .ToList()
-                                    .GroupBy(netværk => netværk.Medlem.Name)
-                                    .Select(group => new RevenueByCompany()
-                                    {
-                                        Company = group.Key,
-                                        Revenue = group.Sum(netværk => netværk.Amount)
-                                    });
-        }
 
         public IEnumerable<RevenueByMedlem> RevenueByMedlem()
         {
@@ -98,7 +83,7 @@ namespace ClientCare.Pages
                 .GroupBy(medlemmer => $"{medlemmer.Name}")
                 .Select(group => new RevenueByMedlem()
                 {
-                    Employee = group.Key,
+                    Medlem = group.Key,
                     Revenue = group.Sum(medlemmer => medlemmer.Kontigent)
                 })
                 .OrderByDescending(revenueByMedlem => revenueByMedlem.Revenue)

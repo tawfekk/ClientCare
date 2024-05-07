@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/home/tawfek/Music/cc/ClientCare.csproj": {}
+    "/home/tawfek/ClientCare/ClientCare.csproj": {}
   },
   "projects": {
-    "/home/tawfek/Music/cc/ClientCare.csproj": {
+    "/home/tawfek/ClientCare/ClientCare.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/tawfek/Music/cc/ClientCare.csproj",
+        "projectUniqueName": "/home/tawfek/ClientCare/ClientCare.csproj",
         "projectName": "ClientCare",
-        "projectPath": "/home/tawfek/Music/cc/ClientCare.csproj",
+        "projectPath": "/home/tawfek/ClientCare/ClientCare.csproj",
         "packagesPath": "/home/tawfek/.nuget/packages/",
-        "outputPath": "/home/tawfek/Music/cc/obj/",
+        "outputPath": "/home/tawfek/ClientCare/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/home/tawfek/.nuget/NuGet/NuGet.Config"

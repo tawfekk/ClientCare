@@ -985,7 +985,7 @@
           "lib/netstandard2.0/Mono.TextTemplating.dll": {}
         }
       },
-      "Radzen.Blazor/4.29.8": {
+      "Radzen.Blazor/4.31.2": {
         "type": "package",
         "dependencies": {
           "DartSassBuilder": "1.0.0",
@@ -2887,10 +2887,10 @@
         "mono.texttemplating.nuspec"
       ]
     },
-    "Radzen.Blazor/4.29.8": {
-      "sha512": "jcuFKeCDC/NbtRJlKr5W26GKSIbYDuUqmWhs9ZILnvDM1k9s76F2EugDk64NWYYNFi8TDxHcL+IPa5ypeNy5jw==",
+    "Radzen.Blazor/4.31.2": {
+      "sha512": "Fu9vsxrkBrb8hZrVeeTLo2DQCX1WvaF+xXvoms1Dqmh7+zRQHPoqa6yt6UuxJV0SGFJ3v6QWpFW5jE4UBiM+Ng==",
       "type": "package",
-      "path": "radzen.blazor/4.29.8",
+      "path": "radzen.blazor/4.31.2",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -2911,7 +2911,7 @@
         "lib/net8.0/Radzen.Blazor.xml",
         "lib/netstandard2.1/Radzen.Blazor.dll",
         "lib/netstandard2.1/Radzen.Blazor.xml",
-        "radzen.blazor.4.29.8.nupkg.sha512",
+        "radzen.blazor.4.31.2.nupkg.sha512",
         "radzen.blazor.nuspec",
         "staticwebassets/Radzen.Blazor.js",
         "staticwebassets/css/dark-base.css",
@@ -4557,11 +4557,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/tawfek/Music/cc/ClientCare.csproj",
+      "projectUniqueName": "/home/tawfek/ClientCare/ClientCare.csproj",
       "projectName": "ClientCare",
-      "projectPath": "/home/tawfek/Music/cc/ClientCare.csproj",
+      "projectPath": "/home/tawfek/ClientCare/ClientCare.csproj",
       "packagesPath": "/home/tawfek/.nuget/packages/",
-      "outputPath": "/home/tawfek/Music/cc/obj/",
+      "outputPath": "/home/tawfek/ClientCare/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/home/tawfek/.nuget/NuGet/NuGet.Config"

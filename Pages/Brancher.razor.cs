@@ -57,20 +57,20 @@ namespace ClientCare.Pages
 
         protected async Task AddButtonClick(MouseEventArgs args)
         {
-            await DialogService.OpenAsync<AddBranche>("Add Branche", null);
+            await DialogService.OpenAsync<AddBranche>("Tilføj branche", null);
             await grid0.Reload();
         }
 
         protected async Task EditRow(ClientCare.Models.CRM.Branche args)
         {
-            await DialogService.OpenAsync<EditBranche>("Edit Branche", new Dictionary<string, object> { {"Id", args.Id} });
+            await DialogService.OpenAsync<EditBranche>("Rediger branche", new Dictionary<string, object> { {"Id", args.Id} });
         }
 
         protected async Task GridDeleteButtonClick(MouseEventArgs args, ClientCare.Models.CRM.Branche BranchE)
         {
             try
             {
-                if (await DialogService.Confirm("Are you sure you want to delete this record?") == true)
+                if (await DialogService.Confirm("Er du sikker på at du vil slette denne post?") == true)
                 {
                     var deleteResult = await CRMService.DeleteBranche(BranchE.Id);
 

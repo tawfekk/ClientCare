@@ -2,11 +2,11 @@
 @attribute [Authorize]
 @inject Microsoft.Extensions.Localization.IStringLocalizer<Profile> L
 
-<PageTitle>Profile</PageTitle>
+<PageTitle>Min profil</PageTitle>
 <RadzenStack>
     <RadzenRow AlignItems="AlignItems.Center">
         <RadzenColumn Size="12">
-            <RadzenText Text="Profile" TextStyle="TextStyle.H3" TagName="TagName.H1" style="margin: 0" />
+            <RadzenText Text="Min profil" TextStyle="TextStyle.H3" TagName="TagName.H1" style="margin: 0" />
         </RadzenColumn>
     </RadzenRow>
     <RadzenRow>
@@ -22,7 +22,7 @@
                                     </RadzenColumn>
                                     <RadzenColumn Size="12" SizeMD="9">
                                         <RadzenFileInput style="display: block; " Name="ProfilePhoto" @bind-Value="@user.Picture" ChooseText="Vælg" DeleteText="Slet"></RadzenFileInput>
-                                        <RadzenRequiredValidator Component="ProfilePhoto" style="position: absolute" Text="Picture is required"></RadzenRequiredValidator>
+                                        <RadzenRequiredValidator Component="ProfilePhoto" style="position: absolute" Text="Picture er påkrævet"></RadzenRequiredValidator>
                                     </RadzenColumn>
                                 </RadzenRow>
                                 <RadzenRow>
@@ -31,7 +31,7 @@
                                     </RadzenColumn>
                                     <RadzenColumn Size="12" SizeMD="9">
                                         <RadzenTextBox style="display: block; width: 100%" Name="FirstNameTbx" @bind-Value="@user.FirstName"></RadzenTextBox>
-                                        <RadzenRequiredValidator Component="FirstNameTbx" style="position: absolute" Text="First Name is required"></RadzenRequiredValidator>
+                                        <RadzenRequiredValidator Component="FirstNameTbx" style="position: absolute" Text="First Navn er påkrævet"></RadzenRequiredValidator>
                                     </RadzenColumn>
                                 </RadzenRow>
                                 <RadzenRow>
@@ -40,7 +40,7 @@
                                     </RadzenColumn>
                                     <RadzenColumn Size="12" SizeMD="9">
                                         <RadzenTextBox style="display: block; width: 100%" Name="LastNameTbx" @bind-Value="@user.LastName"></RadzenTextBox>
-                                        <RadzenRequiredValidator Component="LastNameTbx" style="position: absolute" Text="Last Name is required"></RadzenRequiredValidator>
+                                        <RadzenRequiredValidator Component="LastNameTbx" style="position: absolute" Text="Last Navn er påkrævet"></RadzenRequiredValidator>
                                     </RadzenColumn>
                                 </RadzenRow>
                                 
@@ -59,34 +59,34 @@
                             </RadzenAlert>
 
                             <RadzenStack style="margin-bottom: 1rem;">
-                                <RadzenFormField Text="Old Password" Variant="Variant.Filled">
+                                <RadzenFormField Text="Nuværende adgangskode" Variant="Variant.Filled">
                                     <ChildContent>
                                         <RadzenPassword @bind-Value="@oldPassword" style="display: block; width: 100%" Name="OldPassword" />
                                     </ChildContent>
                                     <Helper>
-                                        <RadzenRequiredValidator Component="OldPassword" Text="Enter your current password" />
+                                        <RadzenRequiredValidator Component="OldPassword" Text="Indtast din nuv. adgangskode" />
                                     </Helper>
                                 </RadzenFormField>
-                                <RadzenFormField Text="New Password" Variant="Variant.Filled">
+                                <RadzenFormField Text="Ny adgangskode" Variant="Variant.Filled">
                                     <ChildContent>
                                         <RadzenPassword @bind-Value="@newPassword" style="display: block; width: 100%" Name="NewPassword" />
                                     </ChildContent>
                                     <Helper>
-                                        <RadzenRequiredValidator Component="NewPassword" Text="Enter your new password" />
+                                        <RadzenRequiredValidator Component="NewPassword" Text="Indtast din nye adgangskode" />
                                     </Helper>
                                 </RadzenFormField>
-                                <RadzenFormField Text="Confirm Password" Variant="Variant.Filled">
+                                <RadzenFormField Text="Bekræft adgangskode" Variant="Variant.Filled">
                                     <ChildContent>
                                         <RadzenPassword @bind-Value="@confirmPassword" style="display: block; width: 100%" Name="ConfirmPassword" />
                                     </ChildContent>
                                     <Helper>
-                                        <RadzenRequiredValidator Component="ConfirmPassword" Text="Confirm your new password" />
-                                        <RadzenCompareValidator Component="ConfirmPassword" Text="Passwords should be the same" Value="@newPassword" />
+                                        <RadzenRequiredValidator Component="ConfirmPassword" Text="Bekræft din nye adgangskode" />
+                                        <RadzenCompareValidator Component="ConfirmPassword" Text="Adgangskoderne skal være ens" Value="@newPassword" />
                                     </Helper>
                                 </RadzenFormField>
                             </RadzenStack>
                             <RadzenStack Orientation="Orientation.Horizontal" AlignItems="AlignItems.Center" JustifyContent="JustifyContent.End">
-                                <RadzenButton ButtonType="ButtonType.Submit" Text="Change password" Variant="Variant.Flat" />
+                                <RadzenButton ButtonType="ButtonType.Submit" Text="Skift adgangskode" Variant="Variant.Flat" />
                             </RadzenStack>
                         </RadzenTemplateForm>
                     </RadzenTabsItem>

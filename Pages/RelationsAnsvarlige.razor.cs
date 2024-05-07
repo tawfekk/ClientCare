@@ -57,20 +57,20 @@ namespace ClientCare.Pages
 
         protected async Task AddButtonClick(MouseEventArgs args)
         {
-            await DialogService.OpenAsync<AddRelationsAnsvarlig>("Add RelationsAnsvarlig", null);
+            await DialogService.OpenAsync<AddRelationsAnsvarlig>("Tilføj relationsansvarlig", null);
             await grid0.Reload();
         }
 
         protected async Task EditRow(ClientCare.Models.CRM.RelationsAnsvarlig args)
         {
-            await DialogService.OpenAsync<EditRelationsAnsvarlig>("Edit RelationsAnsvarlig", new Dictionary<string, object> { {"Id", args.Id} });
+            await DialogService.OpenAsync<EditRelationsAnsvarlig>("Rediger relationsansvarlig", new Dictionary<string, object> { {"Id", args.Id} });
         }
 
         protected async Task GridDeleteButtonClick(MouseEventArgs args, ClientCare.Models.CRM.RelationsAnsvarlig relationsAnsvarlig)
         {
             try
             {
-                if (await DialogService.Confirm("Are you sure you want to delete this record?") == true)
+                if (await DialogService.Confirm("Er du sikker på at du vil slette denne post?") == true)
                 {
                     var deleteResult = await CRMService.DeleteRelationsAnsvarlig(relationsAnsvarlig.Id);
 

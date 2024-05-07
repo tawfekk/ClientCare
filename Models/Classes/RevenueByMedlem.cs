@@ -1,8 +1,8 @@
 ﻿namespace ClientCare.Models.Classes
 {
-    public class RevenueByCompany
+    public class RevenueByMedlem
     {
-        public string Company { get; set; }
+        public string Medlem { get; set; }
         public decimal Revenue { get; set; }
-    }    
+    }
 }

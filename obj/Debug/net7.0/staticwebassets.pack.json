@@ -1,47 +1,47 @@
 {
   "Files": [
     {
-      "Id": "/home/tawfek/Music/cc/wwwroot/css/bootstrap/bootstrap.min.css",
+      "Id": "/home/tawfek/ClientCare/wwwroot/css/bootstrap/bootstrap.min.css",
       "PackagePath": "staticwebassets/css/bootstrap/bootstrap.min.css"
     },
     {
-      "Id": "/home/tawfek/Music/cc/wwwroot/css/bootstrap/bootstrap.min.css.map",
+      "Id": "/home/tawfek/ClientCare/wwwroot/css/bootstrap/bootstrap.min.css.map",
       "PackagePath": "staticwebassets/css/bootstrap/bootstrap.min.css.map"
     },
     {
-      "Id": "/home/tawfek/Music/cc/wwwroot/css/material3-base.css",
+      "Id": "/home/tawfek/ClientCare/wwwroot/css/material3-base.css",
       "PackagePath": "staticwebassets/css/material3-base.css"
     },
     {
-      "Id": "/home/tawfek/Music/cc/wwwroot/css/site.css",
+      "Id": "/home/tawfek/ClientCare/wwwroot/css/site.css",
       "PackagePath": "staticwebassets/css/site.css"
     },
     {
-      "Id": "/home/tawfek/Music/cc/wwwroot/fonts/DINumbersOffice.ttf",
+      "Id": "/home/tawfek/ClientCare/wwwroot/fonts/DINumbersOffice.ttf",
       "PackagePath": "staticwebassets/fonts/DINumbersOffice.ttf"
     },
     {
-      "Id": "/home/tawfek/Music/cc/wwwroot/fonts/DISansDisplay.ttf",
+      "Id": "/home/tawfek/ClientCare/wwwroot/fonts/DISansDisplay.ttf",
       "PackagePath": "staticwebassets/fonts/DISansDisplay.ttf"
     },
     {
-      "Id": "/home/tawfek/Music/cc/wwwroot/images/favicon.ico",
+      "Id": "/home/tawfek/ClientCare/wwwroot/images/favicon.ico",
       "PackagePath": "staticwebassets/images/favicon.ico"
     },
     {
-      "Id": "/home/tawfek/Music/cc/wwwroot/images/favicon.png",
+      "Id": "/home/tawfek/ClientCare/wwwroot/images/favicon.png",
       "PackagePath": "staticwebassets/images/favicon.png"
     },
     {
-      "Id": "/home/tawfek/Music/cc/wwwroot/images/login.png",
+      "Id": "/home/tawfek/ClientCare/wwwroot/images/login.png",
       "PackagePath": "staticwebassets/images/login.png"
     },
     {
-      "Id": "/home/tawfek/Music/cc/wwwroot/images/logo-login.png",
+      "Id": "/home/tawfek/ClientCare/wwwroot/images/logo-login.png",
       "PackagePath": "staticwebassets/images/logo-login.png"
     },
     {
-      "Id": "/home/tawfek/Music/cc/wwwroot/images/logo.png",
+      "Id": "/home/tawfek/ClientCare/wwwroot/images/logo.png",
       "PackagePath": "staticwebassets/images/logo.png"
     },
     {
