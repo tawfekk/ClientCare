@@ -18,15 +18,7 @@ namespace ClientCare.Models.CRM
 
         [Required]
         [ConcurrencyCheck]
-        public string UserId { get; set; }
-
-        [Required]
-        [ConcurrencyCheck]
         public int MedlemId { get; set; }
-
-        [Required]
-        [ConcurrencyCheck]
-        public int StatusId { get; set; }
 
         public Medlem Medlem { get; set; }
 
