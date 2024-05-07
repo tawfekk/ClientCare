@@ -1,0 +1,85 @@
+@page "/"
+
+@attribute [Authorize]
+@inject Microsoft.Extensions.Localization.IStringLocalizer<Index> L
+<PageTitle>Index</PageTitle>
+<RadzenRow Gap="5" RowGap="5">
+    <RadzenColumn SizeXL="3" SizeLG="6">
+        <RadzenCard Style="margin: 16px; border-radius: 15px 0 15px 15px" Variant="Radzen.Variant.Flat">
+            <RadzenRow>
+                <RadzenColumn SizeXS="4">
+                    <RadzenIcon Icon="attach_money" Style="width: 64px; height: 64px; font-size: 48px" IconStyle="Radzen.IconStyle.Primary"></RadzenIcon>
+                </RadzenColumn>
+                <RadzenColumn SizeXS="8">
+                    <RadzenHeading Text="Indkomst i tusinder" Size="H4" Style="text-align: right; margin: 0px; font-weight: normal; font-size: 20px"></RadzenHeading>
+                <RadzenHeading Text="SIDSTE MÅNED" Size="H4" Style="text-align: right; margin: 0px; font-size: 12px"></RadzenHeading>
+                <RadzenHeading Text="@monthlyStats.Revenue.ToString()" Size="H4" Style="text-align: right; margin: 13px; font-size: 40px; font-family: DINumbersOffice; font-weight: normal"></RadzenHeading>
+                </RadzenColumn>
+            </RadzenRow>
+        </RadzenCard>
+    </RadzenColumn>
+<RadzenColumn SizeXL="3" SizeLG="6">
+<RadzenCard Style="margin: 16px; border-radius: 15px 0 15px 15px" Variant="Radzen.Variant.Flat">
+            <RadzenRow>
+                <RadzenColumn SizeXS="4">
+                    <RadzenIcon Icon="trending_up" Style="width: 64px; height: 64px; font-size: 48px" IconStyle="Radzen.IconStyle.Primary"></RadzenIcon>
+                </RadzenColumn>
+<RadzenColumn SizeXS="8">
+    <RadzenHeading Text="Nye medlemmer" Size="H4" Style="text-align: right; margin: 0px; font-weight: normal; font-size: 20px"></RadzenHeading>
+<RadzenHeading Text="SIDSTE MÅNED" Size="H4" Style="text-align: right; margin: 0px; font-size: 12px"></RadzenHeading>
+<RadzenHeading Text="@(monthlyStats.Netværk.ToString())" Size="H4" Style="text-align: right; margin: 13px; font-size: 40px; font-family: DINumbersOffice; font-weight: normal"></RadzenHeading>
+</RadzenColumn>
+            </RadzenRow>
+        </RadzenCard>
+    </RadzenColumn>
+
+
+</RadzenRow>
+
+<RadzenRow RadzenRow Gap="5" RowGap="5">
+<RadzenColumn SizeXL="4" SizeLG="6" Style="margin-bottom:16px;width:100%;" >
+        <RadzenCard Style="margin: 16px; border-radius: 15px 0 15px 15px" Variant="Radzen.Variant.Flat">
+            <RadzenHeading Text="Indkomst baseret på måned" Size="H3" Style="font-weight: normal; font-size: 20px"/>
+            <RadzenChart Style="width: 100%">
+                <RadzenAreaSeries Title="Millioner" TItem="Models.Classes.RevenueByMonth" Data="@revenueByMonth" CategoryProperty="Month" ValueProperty="Revenue"></RadzenAreaSeries>
+            </RadzenChart>
+        </RadzenCard>
+    </RadzenColumn>
+<RadzenColumn SizeXL="4" SizeLG="6" Style="margin-bottom:16px;width:100%;" >
+        <RadzenCard Style="margin: 16px; border-radius: 15px 0 15px 15px" Variant="Radzen.Variant.Flat">
+            <RadzenHeading Text="Indkomst baseret på medlem" Size="H3" Style="font-weight: normal; font-size: 20px"/>
+            <RadzenChart Style="width: 100%">
+                <RadzenBarSeries Title="Tusinder" TItem="Models.Classes.RevenueByMedlem" Data="@revenueByMedlem" CategoryProperty="Employee" ValueProperty="Revenue"></RadzenBarSeries>
+            </RadzenChart>
+        </RadzenCard>
+    </RadzenColumn>   
+</RadzenRow>
+
+<RadzenRow RadzenRow Gap="5" RowGap="5">
+     <RadzenColumn SizeXL="6" Style="margin-bottom:16px;width:100%;" >
+         <RadzenCard Variant="Radzen.Variant.Filled">
+             <RadzenHeading Text="Seneste medlemmer" Size="H3" Style="font-weight: normal; font-size: 20px" />
+             <RadzenDataGrid TItem="ClientCare.Models.CRM.Medlem" Data="@medlems" AllowSorting="true" AllowPaging="true" AllowFiltering="true" ClearFilterText="Ryd" AndOperatorText="Og" ApplyFilterText="Anvend" StartsWithText="Starter med" NotEqualsText="Ikke lig med" OrOperatorText="Eller" LessThanText="Mindre end" LessThanOrEqualsText="Mindre end eller lig med" IsNotNullText="Er ikke null" IsNullText="Er null" IsNotEmptyText="Er ikke tom" IsEmptyText="Er tom" GreaterThanText="Større end" GreaterThanOrEqualsText="Større end eller lig med" ColumnsText="Kolonner" ContainsText="Indeholder" ColumnsShowingText="Kolonner viser" EmptyText="Intet at vise her" EndsWithText="Ender med" EnumFilterSelectText="Vælg..." EnumNullFilterText="Ingen værdi" EqualsText="Lig med" Responsive="false">
+                <Columns>
+                    <RadzenDataGridColumn Context="context" TItem="ClientCare.Models.CRM.Medlem" Property="Name" Title="Navn">
+                  </RadzenDataGridColumn>
+                    <RadzenDataGridColumn Context="context" TItem="ClientCare.Models.CRM.Medlem" Property="Kontigent" Title="Kontigent">
+                        <Template>
+                            <RadzenLabel Text="@context.Kontigent.ToString("C")"></RadzenLabel>
+                        </Template>
+                    </RadzenDataGridColumn>
+                    <RadzenDataGridColumn Context="context" TItem="ClientCare.Models.CRM.Medlem" Property="BrancheId" Title="Branche"> 
+                         <Template>
+                            <RadzenLabel Text="@context.Branche.Name"></RadzenLabel>
+                        </Template>
+                    </RadzenDataGridColumn>
+                    <RadzenDataGridColumn Context="context" TItem="ClientCare.Models.CRM.Medlem" Property="RelationsansvarligId" Title="Relationsansvarlig">
+                        <Template>
+                            <RadzenLabel Text="@context.RelationsAnsvarlig.Name"></RadzenLabel>
+                        </Template>
+                    </RadzenDataGridColumn>
+                </Columns>
+            </RadzenDataGrid>
+         </RadzenCard>
+     </RadzenColumn>
+</RadzenRow>

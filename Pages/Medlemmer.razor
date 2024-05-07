@@ -1,0 +1,44 @@
+@page "/medlemmer"
+@attribute [Authorize]
+
+<PageTitle>Medlemmer</PageTitle>
+<RadzenStack>
+    <RadzenRow AlignItems="AlignItems.Center">
+        <RadzenColumn Size="12" SizeMD="6">
+            <RadzenText Text="Medlemmer" TextStyle="TextStyle.H3" TagName="TagName.H1" style="margin: 0" />
+        </RadzenColumn>
+        <RadzenColumn Size="12" SizeMD="6">
+            <RadzenStack Orientation="Orientation.Horizontal" AlignItems="AlignItems.Center" JustifyContent="JustifyContent.End" Gap="0.5rem">
+                <RadzenSplitButton Icon="get_app" Text="Eksporter" Click="@ExportClick" Variant="Variant.Flat" Shade="Shade.Lighter" onmouseover="this.style.borderRadius='12px 0 12px 0'" onmouseout="this.style.borderRadius='12px'" Size="Radzen.ButtonSize.Medium">
+                    <RadzenSplitButtonItem Text="Excel" Value="xlsx" />
+                    <RadzenSplitButtonItem Text="CSV" Value="csv" />
+                </RadzenSplitButton>
+                <RadzenButton Icon="add_circle_outline" Text="Tilføj" Click="@AddButtonClick" Variant="Variant.Flat" onmouseover="this.style.backgroundColor='#7D55C7'; this.style.borderRadius='12px 0 12px 0'" onmouseout="this.style.backgroundColor='#38025C'; this.style.borderRadius='12px'" Disabled="false" />
+            </RadzenStack>
+        </RadzenColumn>
+    </RadzenRow>
+    <RadzenTextBox Placeholder="Søg ..." style="display: block; width: 100%" @oninput="@Search" />
+    <RadzenRow>
+        <RadzenColumn SizeMD="12">
+            <RadzenDataGrid @ref="grid0" ColumnWidth="200px" AllowFiltering="true" FilterMode="FilterMode.Advanced" AllowPaging="true" AllowSorting="true" ShowPagingSummary="true" PageSizeOptions=@(new int[]{5, 10, 20, 30})
+                Data="@medlems" TItem="ClientCare.Models.CRM.Medlem" RowSelect="@EditRow" ClearFilterText="Ryd" AndOperatorText="Og" ApplyFilterText="Anvend" StartsWithText="Starter med" NotEqualsText="Ikke lig med" OrOperatorText="Eller" LessThanText="Mindre end" LessThanOrEqualsText="Mindre end eller lig med" IsNotNullText="Er ikke null" IsNullText="Er null" IsNotEmptyText="Er ikke tom" IsEmptyText="Er tom" GreaterThanText="Større end" GreaterThanOrEqualsText="Større end eller lig med" ColumnsText="Kolonner" ContainsText="Indeholder" ColumnsShowingText="Kolonner viser" EmptyText="Intet at vise her" EndsWithText="Ender med" EnumFilterSelectText="Vælg..." EnumNullFilterText="Ingen værdi" EqualsText="Lig med" Responsive="false">
+                <Columns>
+                    <RadzenDataGridColumn TItem="ClientCare.Models.CRM.Medlem" Property="Name" Title="Firmanavn"></RadzenDataGridColumn>
+                    <RadzenDataGridColumn TItem="ClientCare.Models.CRM.Medlem" Property="Email" Title="Email"></RadzenDataGridColumn>
+                    <RadzenDataGridColumn TItem="ClientCare.Models.CRM.Medlem" Property="Direktør" Title="Adm. direktør"></RadzenDataGridColumn>
+                    <RadzenDataGridColumn TItem="ClientCare.Models.CRM.Medlem" Property="AntalAnsatte" Title="Antal ansatte"></RadzenDataGridColumn>
+                    <RadzenDataGridColumn TItem="ClientCare.Models.CRM.Medlem" Property="CVR" Title="CVR"></RadzenDataGridColumn>
+                    <RadzenDataGridColumn TItem="ClientCare.Models.CRM.Medlem" Property="Kontigent" Title="Kontigent" Filterable="false"></RadzenDataGridColumn>
+                    <RadzenDataGridColumn TItem="ClientCare.Models.CRM.Netværk" Property="Indmeldelsesdato" Title="Indmeldelsesdato" Filterable="false"></RadzenDataGridColumn>
+                    <RadzenDataGridColumn TItem="ClientCare.Models.CRM.Medlem" Property="RelationsAnsvarlig.Name" Title="Relationsansvarlig"></RadzenDataGridColumn>
+                    <RadzenDataGridColumn TItem="ClientCare.Models.CRM.Medlem" Property="Branche.Name" Title="Branche"></RadzenDataGridColumn>
+                    <RadzenDataGridColumn TItem="ClientCare.Models.CRM.Medlem" Filterable="false" Sortable="false" Width="70px" TextAlign="TextAlign.Center">
+                        <Template Context="medlem">
+                            <RadzenButton ButtonStyle="ButtonStyle.Danger" Icon="delete" Size="ButtonSize.Small" Shade="Shade.Lighter" Variant="Variant.Flat" Click=@(args => GridDeleteButtonClick(args, medlem)) @onclick:stopPropagation="true" />
+                        </Template>
+                    </RadzenDataGridColumn>
+                </Columns>
+            </RadzenDataGrid>
+        </RadzenColumn>
+    </RadzenRow>
+</RadzenStack>
