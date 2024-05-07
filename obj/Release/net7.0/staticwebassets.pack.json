@@ -1,0 +1,145 @@
+{
+  "Files": [
+    {
+      "Id": "/home/tawfek/Music/cc/wwwroot/css/bootstrap/bootstrap.min.css",
+      "PackagePath": "staticwebassets/css/bootstrap/bootstrap.min.css"
+    },
+    {
+      "Id": "/home/tawfek/Music/cc/wwwroot/css/bootstrap/bootstrap.min.css.map",
+      "PackagePath": "staticwebassets/css/bootstrap/bootstrap.min.css.map"
+    },
+    {
+      "Id": "/home/tawfek/Music/cc/wwwroot/css/material3-base.css",
+      "PackagePath": "staticwebassets/css/material3-base.css"
+    },
+    {
+      "Id": "/home/tawfek/Music/cc/wwwroot/css/site.css",
+      "PackagePath": "staticwebassets/css/site.css"
+    },
+    {
+      "Id": "/home/tawfek/Music/cc/wwwroot/fonts/DISansDisplay-Regular.woff",
+      "PackagePath": "staticwebassets/fonts/DISansDisplay-Regular.woff"
+    },
+    {
+      "Id": "/home/tawfek/Music/cc/wwwroot/fonts/MaterialIcons-Regular.woff",
+      "PackagePath": "staticwebassets/fonts/MaterialIcons-Regular.woff"
+    },
+    {
+      "Id": "/home/tawfek/Music/cc/wwwroot/fonts/SourceSansPro-Black.woff",
+      "PackagePath": "staticwebassets/fonts/SourceSansPro-Black.woff"
+    },
+    {
+      "Id": "/home/tawfek/Music/cc/wwwroot/fonts/SourceSansPro-BlackIt.woff",
+      "PackagePath": "staticwebassets/fonts/SourceSansPro-BlackIt.woff"
+    },
+    {
+      "Id": "/home/tawfek/Music/cc/wwwroot/fonts/SourceSansPro-Bold.woff",
+      "PackagePath": "staticwebassets/fonts/SourceSansPro-Bold.woff"
+    },
+    {
+      "Id": "/home/tawfek/Music/cc/wwwroot/fonts/SourceSansPro-BoldIt.woff",
+      "PackagePath": "staticwebassets/fonts/SourceSansPro-BoldIt.woff"
+    },
+    {
+      "Id": "/home/tawfek/Music/cc/wwwroot/fonts/SourceSansPro-ExtraLight.woff",
+      "PackagePath": "staticwebassets/fonts/SourceSansPro-ExtraLight.woff"
+    },
+    {
+      "Id": "/home/tawfek/Music/cc/wwwroot/fonts/SourceSansPro-ExtraLightIt.woff",
+      "PackagePath": "staticwebassets/fonts/SourceSansPro-ExtraLightIt.woff"
+    },
+    {
+      "Id": "/home/tawfek/Music/cc/wwwroot/fonts/SourceSansPro-It.woff",
+      "PackagePath": "staticwebassets/fonts/SourceSansPro-It.woff"
+    },
+    {
+      "Id": "/home/tawfek/Music/cc/wwwroot/fonts/SourceSansPro-Light.woff",
+      "PackagePath": "staticwebassets/fonts/SourceSansPro-Light.woff"
+    },
+    {
+      "Id": "/home/tawfek/Music/cc/wwwroot/fonts/SourceSansPro-LightIt.woff",
+      "PackagePath": "staticwebassets/fonts/SourceSansPro-LightIt.woff"
+    },
+    {
+      "Id": "/home/tawfek/Music/cc/wwwroot/fonts/SourceSansPro-Regular.woff",
+      "PackagePath": "staticwebassets/fonts/SourceSansPro-Regular.woff"
+    },
+    {
+      "Id": "/home/tawfek/Music/cc/wwwroot/fonts/SourceSansPro-Semibold.woff",
+      "PackagePath": "staticwebassets/fonts/SourceSansPro-Semibold.woff"
+    },
+    {
+      "Id": "/home/tawfek/Music/cc/wwwroot/fonts/SourceSansPro-SemiboldIt.woff",
+      "PackagePath": "staticwebassets/fonts/SourceSansPro-SemiboldIt.woff"
+    },
+    {
+      "Id": "/home/tawfek/Music/cc/wwwroot/fonts/roboto-regular.woff",
+      "PackagePath": "staticwebassets/fonts/roboto-regular.woff"
+    },
+    {
+      "Id": "/home/tawfek/Music/cc/wwwroot/fonts/roboto-v15-latin-300.woff",
+      "PackagePath": "staticwebassets/fonts/roboto-v15-latin-300.woff"
+    },
+    {
+      "Id": "/home/tawfek/Music/cc/wwwroot/fonts/roboto-v15-latin-700.woff",
+      "PackagePath": "staticwebassets/fonts/roboto-v15-latin-700.woff"
+    },
+    {
+      "Id": "/home/tawfek/Music/cc/wwwroot/fonts/roboto-v15-latin-regular.woff",
+      "PackagePath": "staticwebassets/fonts/roboto-v15-latin-regular.woff"
+    },
+    {
+      "Id": "/home/tawfek/Music/cc/wwwroot/fonts/roboto-v30-latin-300.woff",
+      "PackagePath": "staticwebassets/fonts/roboto-v30-latin-300.woff"
+    },
+    {
+      "Id": "/home/tawfek/Music/cc/wwwroot/fonts/roboto-v30-latin-500.woff",
+      "PackagePath": "staticwebassets/fonts/roboto-v30-latin-500.woff"
+    },
+    {
+      "Id": "/home/tawfek/Music/cc/wwwroot/fonts/roboto-v30-latin-700.woff",
+      "PackagePath": "staticwebassets/fonts/roboto-v30-latin-700.woff"
+    },
+    {
+      "Id": "/home/tawfek/Music/cc/wwwroot/fonts/roboto-v30-latin-regular.woff",
+      "PackagePath": "staticwebassets/fonts/roboto-v30-latin-regular.woff"
+    },
+    {
+      "Id": "/home/tawfek/Music/cc/wwwroot/images/favicon.ico",
+      "PackagePath": "staticwebassets/images/favicon.ico"
+    },
+    {
+      "Id": "/home/tawfek/Music/cc/wwwroot/images/favicon.png",
+      "PackagePath": "staticwebassets/images/favicon.png"
+    },
+    {
+      "Id": "/home/tawfek/Music/cc/wwwroot/images/login.png",
+      "PackagePath": "staticwebassets/images/login.png"
+    },
+    {
+      "Id": "/home/tawfek/Music/cc/wwwroot/images/logo-login.png",
+      "PackagePath": "staticwebassets/images/logo-login.png"
+    },
+    {
+      "Id": "/home/tawfek/Music/cc/wwwroot/images/logo.png",
+      "PackagePath": "staticwebassets/images/logo.png"
+    },
+    {
+      "Id": "obj/Release/net7.0/staticwebassets/msbuild.ClientCare.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj/Release/net7.0/staticwebassets/msbuild.build.ClientCare.props",
+      "PackagePath": "build\\ClientCare.props"
+    },
+    {
+      "Id": "obj/Release/net7.0/staticwebassets/msbuild.buildMultiTargeting.ClientCare.props",
+      "PackagePath": "buildMultiTargeting\\ClientCare.props"
+    },
+    {
+      "Id": "obj/Release/net7.0/staticwebassets/msbuild.buildTransitive.ClientCare.props",
+      "PackagePath": "buildTransitive\\ClientCare.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

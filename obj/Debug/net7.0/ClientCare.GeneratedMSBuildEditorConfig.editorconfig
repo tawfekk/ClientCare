@@ -1,0 +1,131 @@
+is_global = true
+build_property.TargetFramework = net7.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = ClientCare
+build_property.RootNamespace = ClientCare
+build_property.ProjectDir = /home/tawfek/Music/cc/
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+build_property.RazorLangVersion = 7.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = /home/tawfek/Music/cc
+build_property._RazorSourceGeneratorDebug = 
+
+[/home/tawfek/Music/cc/App.razor]
+build_metadata.AdditionalFiles.TargetPath = QXBwLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/tawfek/Music/cc/Pages/AddApplicationRole.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvQWRkQXBwbGljYXRpb25Sb2xlLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/tawfek/Music/cc/Pages/AddApplicationUser.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvQWRkQXBwbGljYXRpb25Vc2VyLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/tawfek/Music/cc/Pages/AddBranche.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvQWRkQnJhbmNoZS5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/tawfek/Music/cc/Pages/AddMedlem.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvQWRkTWVkbGVtLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/tawfek/Music/cc/Pages/AddNetværk.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvQWRkTmV0dsOmcmsucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/tawfek/Music/cc/Pages/AddRelationsAnsvarlig.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvQWRkUmVsYXRpb25zQW5zdmFybGlnLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/tawfek/Music/cc/Pages/ApplicationUsers.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvQXBwbGljYXRpb25Vc2Vycy5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/tawfek/Music/cc/Pages/Brancher.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvQnJhbmNoZXIucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/tawfek/Music/cc/Pages/EditApplicationUser.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvRWRpdEFwcGxpY2F0aW9uVXNlci5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/tawfek/Music/cc/Pages/EditBranche.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvRWRpdEJyYW5jaGUucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/tawfek/Music/cc/Pages/EditMedlem.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvRWRpdE1lZGxlbS5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/tawfek/Music/cc/Pages/EditNetværk.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvRWRpdE5ldHbDpnJrLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/tawfek/Music/cc/Pages/EditRelationsAnsvarlig.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvRWRpdFJlbGF0aW9uc0Fuc3ZhcmxpZy5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/tawfek/Music/cc/Pages/Index.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvSW5kZXgucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/tawfek/Music/cc/Pages/Login.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvTG9naW4ucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/tawfek/Music/cc/Pages/Medlemmer.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvTWVkbGVtbWVyLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/tawfek/Music/cc/Pages/Netværk.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvTmV0dsOmcmsucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/tawfek/Music/cc/Pages/Profile.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvUHJvZmlsZS5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/tawfek/Music/cc/Pages/RelationsAnsvarlige.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvUmVsYXRpb25zQW5zdmFybGlnZS5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/tawfek/Music/cc/Pages/Unauthorized.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvVW5hdXRob3JpemVkLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/tawfek/Music/cc/Pages/_Imports.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvX0ltcG9ydHMucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/tawfek/Music/cc/Shared/CulturePicker.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkL0N1bHR1cmVQaWNrZXIucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/tawfek/Music/cc/Shared/LoginLayout.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkL0xvZ2luTGF5b3V0LnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/tawfek/Music/cc/Shared/MainLayout.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkL01haW5MYXlvdXQucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/tawfek/Music/cc/Shared/RedirectToLogin.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkL1JlZGlyZWN0VG9Mb2dpbi5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/tawfek/Music/cc/_Imports.razor]
+build_metadata.AdditionalFiles.TargetPath = X0ltcG9ydHMucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/tawfek/Music/cc/Pages/_Host.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvX0hvc3QuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
