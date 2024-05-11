@@ -15,7 +15,7 @@
           "Microsoft.EntityFrameworkCore": "7.0.0",
           "Microsoft.EntityFrameworkCore.Design": "7.0.0",
           "Microsoft.EntityFrameworkCore.SqlServer": "7.0.0",
-          "Radzen.Blazor": "4.29.8"
+          "Radzen.Blazor": "4.31.2"
         },
         "runtime": {
           "ClientCare.dll": {}
@@ -574,7 +574,7 @@
           }
         }
       },
-      "Radzen.Blazor/4.29.8": {
+      "Radzen.Blazor/4.31.2": {
         "dependencies": {
           "DartSassBuilder": "1.0.0",
           "Microsoft.AspNetCore.Components": "7.0.14",
@@ -583,8 +583,8 @@
         },
         "runtime": {
           "lib/net7.0/Radzen.Blazor.dll": {
-            "assemblyVersion": "4.29.8.0",
-            "fileVersion": "4.29.8.0"
+            "assemblyVersion": "4.31.2.0",
+            "fileVersion": "4.31.2.0"
           }
         }
       },
@@ -1246,12 +1246,12 @@
       "path": "mono.texttemplating/2.2.1",
       "hashPath": "mono.texttemplating.2.2.1.nupkg.sha512"
     },
-    "Radzen.Blazor/4.29.8": {
+    "Radzen.Blazor/4.31.2": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-jcuFKeCDC/NbtRJlKr5W26GKSIbYDuUqmWhs9ZILnvDM1k9s76F2EugDk64NWYYNFi8TDxHcL+IPa5ypeNy5jw==",
-      "path": "radzen.blazor/4.29.8",
-      "hashPath": "radzen.blazor.4.29.8.nupkg.sha512"
+      "sha512": "sha512-Fu9vsxrkBrb8hZrVeeTLo2DQCX1WvaF+xXvoms1Dqmh7+zRQHPoqa6yt6UuxJV0SGFJ3v6QWpFW5jE4UBiM+Ng==",
+      "path": "radzen.blazor/4.31.2",
+      "hashPath": "radzen.blazor.4.31.2.nupkg.sha512"
     },
     "System.Buffers/4.5.1": {
       "type": "package",

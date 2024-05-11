@@ -15,5 +15,8 @@ namespace ClientCare.Models.CRM
         [ConcurrencyCheck]
         public string Name { get; set; }
 
+        [ConcurrencyCheck]
+        public string Branchedirektør { get; set; }
+
     }
 }

@@ -24,10 +24,10 @@ namespace ClientCare.Models.CRM
         public string Direktør { get; set; }
 
         [ConcurrencyCheck]
-        public string AntalAnsatte { get; set; }
+        public int AntalAnsatte { get; set; }
 
         [ConcurrencyCheck]
-        public string CVR { get; set; }
+        public int CVR { get; set; }
 
         [ConcurrencyCheck]
         public decimal Kontigent { get; set; }

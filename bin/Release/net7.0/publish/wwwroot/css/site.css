@@ -1,3 +1,13 @@
+@font-face {
+    font-family: DISansDisplay;
+    src: url('../fonts/DISansDisplay.ttf');
+}
+
+@font-face {
+    font-family: DINumbersOffice;
+    src: url('../fonts/DINumbersOffice.ttf');
+}
+
 #blazor-error-ui {
     background: lightyellow;
     bottom: 0;
@@ -115,7 +125,7 @@
     --rz-series-22: #3db840;
     --rz-series-23: #3db89c;
     --rz-series-24: #3d77b8;
-    --rz-text-font-family: DI Sans Display;
+    --rz-text-font-family: DISansDisplay;
     --rz-button-border-radius: 12px;
     --rz-button-transition: all 0.4s linear;
 }
