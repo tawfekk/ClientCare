@@ -18,17 +18,6 @@ namespace ClientCare.Data
 
         partial void OnModelBuilding(ModelBuilder builder);
 
-        protected override void OnModelCreating(ModelBuilder builder)
-        {
-            base.OnModelCreating(builder);
-
-            builder.Entity<ClientCare.Models.CRM.Netværk>()
-              .HasOne(i => i.Medlem)
-              .WithMany(i => i.Netværk)
-              .HasForeignKey(i => i.MedlemId)
-              .HasPrincipalKey(i => i.Id);
-
-        }
 
         public DbSet<ClientCare.Models.CRM.Medlem> Medlemmer { get; set; }
 

@@ -48,11 +48,11 @@ namespace ClientCare.Pages
 
             await grid0.GoToPage(0);
 
-            medlems = await CRMService.GetMedlemmer(new Query { Filter = $@"i => i.Email.Contains(@0) || i.Name.Contains(@0) || i.Direktør.Contains(@0) || i.AntalAnsatte.Contains(@0) || i.CVR.Contains(@0)", FilterParameters = new object[] { search }, Expand = "RelationsAnsvarlig, Branche" });
+            medlems = await CRMService.GetMedlemmer(new Query { Filter = $@"i => i.Email.Contains(@0) || i.Name.Contains(@0) || i.Direktør.Contains(@0) || i.AntalAnsatte.ToString().Contains(@0) || i.CVR.ToString().Contains(@0)", FilterParameters = new object[] { search }, Expand = "RelationsAnsvarlig, Branche" });
         }
         protected override async Task OnInitializedAsync()
         {
-            medlems = await CRMService.GetMedlemmer(new Query { Filter = $@"i => i.Email.Contains(@0) || i.Name.Contains(@0) || i.Direktør.Contains(@0) || i.AntalAnsatte.Contains(@0) || i.CVR.Contains(@0)", FilterParameters = new object[] { search }, Expand = "RelationsAnsvarlig, Branche" });
+            medlems = await CRMService.GetMedlemmer(new Query { Filter = $@"i => i.Email.Contains(@0) || i.Name.Contains(@0) || i.Direktør.Contains(@0) || i.AntalAnsatte.ToString().Contains(@0) || i.CVR.ToString().Contains(@0)", FilterParameters = new object[] { search }, Expand = "RelationsAnsvarlig, Branche" });
             //medlems = await CRMService.GetMedlemmer();
         }
 
