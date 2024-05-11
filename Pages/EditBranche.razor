@@ -32,6 +32,14 @@
                     <RadzenTextBox style="display: block; width: 100%" @bind-Value="@BranchE.Name" Name="Name" />
                 </RadzenColumn>
             </RadzenRow>
+            <RadzenRow style="margin-bottom: 1rem">
+                <RadzenColumn SizeMD="3">
+                    <RadzenLabel Text="Branchedirektør" Component="Branchedirektør" style="width: 100%" />
+                </RadzenColumn>
+                <RadzenColumn SizeMD="9">
+                    <RadzenTextBox style="display: block; width: 100%" @bind-Value="@BranchE.Branchedirektør" Name="Branchedirektør" />
+                </RadzenColumn>
+            </RadzenRow>
           <RadzenStack  Orientation="Orientation.Horizontal" AlignItems="AlignItems.Center" JustifyContent="JustifyContent.End" Gap="0.5rem">
                     <RadzenButton ButtonStyle="ButtonStyle.Primary" ButtonType="ButtonType.Submit" Icon="save" Text="Gem" Variant="Variant.Flat" />
                     <RadzenButton ButtonStyle="ButtonStyle.Light" Text="Annuler" Variant="Variant.Flat" Click="@CancelButtonClick"  />

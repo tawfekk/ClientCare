@@ -71,7 +71,6 @@ namespace ClientCare.Pages
                             Revenue = group.Sum(medlemmer => medlemmer.Kontigent),
                             Medlemmer = group.Count(),
                         })
-                        .OrderBy(deals => deals.Month)
                         .LastOrDefault();
         }
 

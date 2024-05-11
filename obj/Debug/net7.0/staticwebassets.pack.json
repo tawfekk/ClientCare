@@ -25,10 +25,6 @@
       "PackagePath": "staticwebassets/fonts/DISansDisplay.ttf"
     },
     {
-      "Id": "/home/tawfek/ClientCare/wwwroot/images/favicon.ico",
-      "PackagePath": "staticwebassets/images/favicon.ico"
-    },
-    {
       "Id": "/home/tawfek/ClientCare/wwwroot/images/favicon.png",
       "PackagePath": "staticwebassets/images/favicon.png"
     },

@@ -9,19 +9,19 @@
         <RadzenTemplateForm TItem="ClientCare.Models.CRM.Medlem" Data="@medlem" Visible="@(medlem != null && canEdit)" Submit="@FormSubmit">
             <RadzenRow style="margin-bottom: 1rem">
                 <RadzenColumn SizeMD="3">
+                    <RadzenLabel Text="Firmanavn" Component="Name" style="width: 100%" />
+                </RadzenColumn>
+                <RadzenColumn SizeMD="9">
+                    <RadzenTextBox style="display: block; width: 100%" @bind-Value="@medlem.Name" Name="Name" />
+                </RadzenColumn>
+            </RadzenRow>
+            <RadzenRow style="margin-bottom: 1rem">
+                <RadzenColumn SizeMD="3">
                     <RadzenLabel Text="Email" Component="Email" style="width: 100%" />
                 </RadzenColumn>
                 <RadzenColumn SizeMD="9">
                     <RadzenTextBox style="display: block; width: 100%" @bind-Value="@medlem.Email" Name="Email" />
                     <RadzenRequiredValidator Component="Email" Text="Email er påkrævet" />
-                </RadzenColumn>
-            </RadzenRow>
-            <RadzenRow style="margin-bottom: 1rem">
-                <RadzenColumn SizeMD="3">
-                    <RadzenLabel Text="Firmanavn" Component="Name" style="width: 100%" />
-                </RadzenColumn>
-                <RadzenColumn SizeMD="9">
-                    <RadzenTextBox style="display: block; width: 100%" @bind-Value="@medlem.Name" Name="Name" />
                 </RadzenColumn>
             </RadzenRow>
             <RadzenRow style="margin-bottom: 1rem">
@@ -37,7 +37,8 @@
                     <RadzenLabel Text="Antal ansatte" Component="AntalAnsatte" style="width: 100%" />
                 </RadzenColumn>
                 <RadzenColumn SizeMD="9">
-                    <RadzenTextBox style="display: block; width: 100%" @bind-Value="@medlem.AntalAnsatte" Name="AntalAnsatte" />
+                    <RadzenNumeric style="display: block; width: 100%" @bind-Value="@medlem.AntalAnsatte" Name="AntalAnsatte" />
+                    <RadzenRequiredValidator Component="AntalAnsatte" Text="Antal ansatte er påkrævet" />
                 </RadzenColumn>
             </RadzenRow>
             <RadzenRow style="margin-bottom: 1rem">
@@ -45,7 +46,8 @@
                     <RadzenLabel Text="CVR" Component="CVR" style="width: 100%" />
                 </RadzenColumn>
                 <RadzenColumn SizeMD="9">
-                    <RadzenTextBox style="display: block; width: 100%" @bind-Value="@medlem.CVR" Name="CVR" />
+                    <RadzenNumeric style="display: block; width: 100%" @bind-Value="@medlem.CVR" Name="CVR" />
+                    <RadzenRequiredValidator Component="CVR" Text="CVR er påkrævet" />
                 </RadzenColumn>
             </RadzenRow>
             <RadzenRow style="margin-bottom: 1rem">

@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "MBY/KzvuNOTOYCfDENzdYOMVTw6M9fl6jBbUbgxQcEM=",
+  "Hash": "Ry7JDPJnXQp8MBu+Shxu3piZLlGM37fVUvSFrDQPwmQ=",
   "Source": "ClientCare",
   "BasePath": "_content/ClientCare",
   "Mode": "Default",
@@ -1060,25 +1060,6 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot/fonts/DISansDisplay.ttf"
-    },
-    {
-      "Identity": "/home/tawfek/ClientCare/wwwroot/images/favicon.ico",
-      "SourceId": "ClientCare",
-      "SourceType": "Discovered",
-      "ContentRoot": "/home/tawfek/ClientCare/wwwroot/",
-      "BasePath": "_content/ClientCare",
-      "RelativePath": "images/favicon.ico",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/images/favicon.ico"
     },
     {
       "Identity": "/home/tawfek/ClientCare/wwwroot/images/favicon.png",
