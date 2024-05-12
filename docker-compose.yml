@@ -1,0 +1,23 @@
+version: "3"
+services:
+  clientcare:
+    container_name: clientcare
+    image: tawfekk/zbc-informatik-clientcare
+    ports:
+      - 8090:80
+      - 8091:443
+    restart: unless-stopped
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+  mssql:
+    container_name: sql-server
+    image: mcr.microsoft.com/mssql/server:latest
+    #image: mcr.microsoft.com/mssql/server:2017-CU11-ubuntu
+    restart: unless-stopped
+    environment:
+      ACCEPT_EULA: "Y"
+      SA_PASSWORD: "Kode1234!"
+    ports:
+      - 1433:1433
+    volumes:
+      - /home/docker/mssql/data:/var/opt/mssql/data
