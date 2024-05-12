@@ -35,7 +35,7 @@
                         <RadzenPassword style="display: block; width: 100%" @bind-Value="@(user.ConfirmPassword)" Name="ConfirmPassword" />
                     </ChildContent>
                     <Helper>
-                        <RadzenCompareValidator Text="Passwords must match" Component="ConfirmPassword" Value="@user.Password" />
+                        <RadzenCompareValidator Text="Adgangskoder skal være ens" Component="ConfirmPassword" Value="@user.Password" />
                     </Helper>
                 </RadzenFormField>
             </RadzenStack>
