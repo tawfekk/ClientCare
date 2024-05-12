@@ -61,7 +61,7 @@ namespace ClientCare.Pages
         {
             try
             {
-                if (await DialogService.Confirm("Er du sikker på at du vil slette denne user?") == true)
+                if (await DialogService.Confirm("Er du sikker på at du vil slette denne bruger?") == true)
                 {
                     await Security.DeleteUser($"{user.Id}");
 
